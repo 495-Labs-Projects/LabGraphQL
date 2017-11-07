@@ -57,7 +57,7 @@ Also add the ability for a user to query for a list of all the teams.
 schema = graphene.Schema(query=Query)
 ```
 
-7. To see and access the GraphiQL user interface we need to update our urls by adding graphql as a new route in our list of urlpatterns.
+7. To see and access the GraphiQL user interface we need to update our urls by adding graphql as a new route in our list of urlpatterns:
 
 ```python
  url(r'^graphql', GraphQLView.as_view(graphiql=True))
@@ -77,5 +77,7 @@ query {
 }
 ```
 As you type GraphiQL uses autocomplete to show you which fields are accessible in your queries. Try out some more queries yourself. Be able to query for a list of all the team names with the first names of the students on each of those teams.
+
+9. Explanations of debugging? How to use query variables? etc.
 
 
